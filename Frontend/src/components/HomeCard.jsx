@@ -3,7 +3,7 @@ import Card from "./Card";
 import image1 from "../assets/1741a162-f6be-4940-97ee-8af75122804d.jpeg";
 import image2 from "../assets/bd411b2e-b897-4181-b927-d39a9a5f1fc6.jpeg";
 import image3 from "../assets/58d22e78-bb91-4d70-abaf-3e9fbb8cce16.jpeg";
-import { cardTexts } from "./cardTexts";
+import { cardTexts } from "./CardTexts";
 const HomeCard = () => {
   const [isExpanded1, setIsExpanded1] = useState(false);
   const [isExpanded2, setIsExpanded2] = useState(false);
