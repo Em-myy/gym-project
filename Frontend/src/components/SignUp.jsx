@@ -4,6 +4,8 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 const SignUp = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -49,10 +51,7 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        "http://localhost:5000/api/users",
-        formData
-      );
+      const response = await axios.post(`${apiUrl}/api/users`, formData);
       handleSuccess();
       setFormData({
         username: "",

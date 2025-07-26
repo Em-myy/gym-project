@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -8,10 +9,9 @@ const app = express();
 
 app.use(express.json());
 
-const db_URI =
-  "mongodb+srv://emmy:emmy010906@cluster1.cb4slnr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1";
+const dbUri = process.env.DB_URI;
 mongoose
-  .connect(db_URI)
+  .connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("Connected to database"))
   .catch((error) => console.log(error));
 
