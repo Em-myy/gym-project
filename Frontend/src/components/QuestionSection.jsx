@@ -16,7 +16,7 @@ const QuestionSection = () => {
   };
 
   return (
-    <div className="flex flex-col gap-y-6 pb-[400px] md:pb-[180px] md:grid md:grid-cols-2 md:gap-x-6 md:px-12 z-0">
+    <div className="flex flex-col gap-y-6 pb-[450px] md:pb-[180px] md:grid md:grid-cols-2 md:gap-x-6 md:px-12 z-0">
       <div className="left-section">
         <div className="bg-gray-100 rounded-1xl overflow-hidden max-w-[700px] mb-3 mt-3 shadow-md">
           <div
