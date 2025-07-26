@@ -1,6 +1,5 @@
 const express = require("express");
 const User = require("./model");
-const { UNSAFE_ErrorResponseImpl } = require("react-router-dom");
 const router = express.Router();
 
 router.post("/", async (req, res) => {
