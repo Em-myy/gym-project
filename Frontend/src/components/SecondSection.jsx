@@ -5,7 +5,7 @@ const SecondSection = () => {
         <div className="text-6xl font-bold text-center">
           We Provide The Best Fitness Service For You.
         </div>
-        <div className="text-4xl">Contact Us Now!!!</div>
+        <div className="text-4xl text-center">Contact Us Now!!!</div>
       </div>
     </div>
   );
